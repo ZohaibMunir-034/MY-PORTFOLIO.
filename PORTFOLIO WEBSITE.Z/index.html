@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ZOHAIB MUNIR | Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-green-50 text-gray-800 font-sans">
+
+  <!-- Header -->
+  <header class="bg-gradient-to-r from-green-600 to-emerald-800 text-white text-center py-10 shadow-lg">
+    <img src="https://i.postimg.cc/4dZvcPZF/Zohaib-Munir.jpg"
+         alt="Zohaib Munir Photo"
+         class="profile-pic w-32 h-32 rounded-full mx-auto border-4 border-white object-cover mb-4">
+    <h1 class="text-3xl font-bold tracking-wide">ZOHAIB MUNIR</h1>
+    <p class="text-lg">BS COMPUTER SCIENCE | UNIVERSITY OF GUJRAT</p>
+    <button id="theme-toggle" class="mt-4 bg-white text-green-800 px-4 py-2 rounded-lg shadow hover:bg-green-100 transition">
+      Dark Mode
+    </button>
+  </header>
+
+  <!-- Navbar -->
+  <nav class="bg-green-100 shadow-md sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-4 flex justify-between items-center py-3">
+      <h2 class="text-xl font-semibold text-emerald-700">Portfolio</h2>
+      <button id="menu-btn" class="md:hidden text-emerald-700 text-2xl focus:outline-none">☰</button>
+      <div id="menu" class="hidden md:flex space-x-6 text-emerald-700 font-medium">
+        <a href="#about" class="hover:text-emerald-600 transition">About</a>
+        <a href="#skills" class="hover:text-emerald-600 transition">Skills</a>
+        <a href="#projects" class="hover:text-emerald-600 transition">Projects</a>
+        <a href="#contact" class="hover:text-emerald-600 transition">Contact</a>
+      </div>
+    </div>
+    <div id="mobile-menu" class="hidden flex-col bg-green-50 px-4 pb-4 space-y-3 md:hidden">
+      <a href="#about" class="hover:text-emerald-600">About</a>
+      <a href="#skills" class="hover:text-emerald-600">Skills</a>
+      <a href="#projects" class="hover:text-emerald-600">Projects</a>
+      <a href="#contact" class="hover:text-emerald-600">Contact</a>
+    </div>
+  </nav>
+
+  <main>
+    <!-- About Section -->
+    <section id="about" class="max-w-3xl mx-auto bg-white mt-10 p-6 rounded-xl shadow">
+      <h2 class="text-2xl font-semibold text-emerald-700 border-b-2 border-emerald-500 pb-2 mb-4">About Me</h2>
+      <p>
+        Hi! I’m <strong>Zohaib Munir</strong>, a passionate BS Computer Science student at the University of Gujrat.
+        I enjoy exploring new technologies, creating modern web projects, and working with databases.
+        I aim to become a skilled developer with expertise in full-stack web applications and data-driven systems.
+      </p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="max-w-3xl mx-auto bg-white mt-10 p-6 rounded-xl shadow">
+      <h2 class="text-2xl font-semibold text-emerald-700 border-b-2 border-emerald-500 pb-2 mb-4">Skills</h2>
+      <ul class="list-disc list-inside space-y-1">
+        <li>HTML, CSS, JavaScript</li>
+        <li>C++ Programming</li>
+        <li>Web Development (Front-End & Back-End)</li>
+        <li>Database Design & SQL</li>
+        <li>Problem Solving & Logical Thinking</li>
+        <li>Project Management & Team Collaboration</li>
+      </ul>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="max-w-6xl mx-auto bg-white mt-10 p-6 rounded-xl shadow">
+      <h2 class="text-2xl font-semibold text-emerald-700 border-b-2 border-emerald-500 pb-2 mb-6 text-center">Projects</h2>
+      <div class="grid md:grid-cols-3 sm:grid-cols-2 gap-6">
+        <div class="card bg-green-50 rounded-lg p-4 shadow hover:shadow-lg transition transform hover:-translate-y-1">
+          <h3 class="text-xl font-semibold mb-2 text-emerald-700">Online Registration Form</h3>
+          <p>A responsive form built using HTML, CSS, and JavaScript for collecting and managing user registration data.</p>
+        </div>
+        <div class="card bg-green-50 rounded-lg p-4 shadow hover:shadow-lg transition transform hover:-translate-y-1">
+          <h3 class="text-xl font-semibold mb-2 text-emerald-700">SQL Car Rental System</h3>
+          <p>A database-driven system to manage car rentals, customers, and return processes efficiently.</p>
+        </div>
+        <div class="card bg-green-50 rounded-lg p-4 shadow hover:shadow-lg transition transform hover:-translate-y-1">
+          <h3 class="text-xl font-semibold mb-2 text-emerald-700">Hotel Management System</h3>
+          <p>A project designed to manage bookings, customers, and rooms using database integration and web UI.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="max-w-3xl mx-auto bg-white mt-10 p-6 rounded-xl shadow text-center">
+      <h2 class="text-2xl font-semibold text-emerald-700 border-b-2 border-emerald-500 pb-2 mb-4">Contact Me</h2>
+      <p class="mb-4">Feel free to reach out for collaborations or project discussions:</p>
+      <a href="mailto:saithzohaibmunir657450@gmail.com" class="text-emerald-700 font-semibold hover:underline">
+        saithzohaibmunir657450@gmail.com
+      </a>
+      <p class="mt-6 text-gray-600">Or send a quick message:</p>
+      <form class="space-y-4 max-w-md mx-auto mt-4">
+        <input type="text" placeholder="Your Name" class="w-full p-3 border rounded-lg focus:ring-2 focus:ring-emerald-400 outline-none" required>
+        <input type="email" placeholder="Your Email" class="w-full p-3 border rounded-lg focus:ring-2 focus:ring-emerald-400 outline-none" required>
+        <textarea placeholder="Your Message" rows="4" class="w-full p-3 border rounded-lg focus:ring-2 focus:ring-emerald-400 outline-none" required></textarea>
+        <button type="submit" class="w-full bg-emerald-600 text-white p-3 rounded-lg hover:bg-emerald-700 transition">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="text-center py-4 mt-10 bg-green-100 text-emerald-800 text-sm">
+    © 2025 Zohaib Munir | University of Gujrat
+  </footer>
+
+  <button id="topBtn" class="hidden fixed bottom-6 right-6 bg-emerald-600 text-white rounded-full p-3 text-lg shadow-md hover:bg-emerald-700 transition">
+    ↑
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
